@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>browser form</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <form action="" novalidate>
+    <label for="email">
+      <span>Email:</span>
+      <input type="email" id="email" name="email" minlength="8" required />
+      <span class="error" aria-live="polite"></span>
+    </label>
+
+    <label for="country">
+      <span>Country:</span>
+      <input type="text" id="country" name="country" minlength="3" required />
+      <span class="error" aria-live="polite"></span>
+    </label>
+
+    <label for="postal">
+      <span>Postal code:</span>
+      <input type="text" id="postal" name="postal" required />
+      <span class="error" aria-live="polite"></span>
+    </label>
+
+    <label for="pass">
+      <span>Password:</span>
+      <input type="password" id="pass" name="pass" maxlength="15" minlength="8" required />
+      <span class="error" aria-live="polite"></span>
+    </label>
+
+    <label for="pass-confirm">
+      <span>Confirm password:</span>
+      <input type="password" id="pass-confirm" name="pass-confirm" maxlength="15" minlength="8" required />
+      <span class="error" aria-live="polite"></span>
+    </label>
+
+    <button>Submit</button>
+  </form>  
+  <script src='./main.js'></script>
+</body>
+</html>
